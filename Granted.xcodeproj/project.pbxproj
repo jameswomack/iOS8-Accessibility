@@ -16,6 +16,7 @@
 		1B41F9B219D5950C0003327A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9B119D5950C0003327A /* Images.xcassets */; };
 		1B41F9B519D5950C0003327A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9B319D5950C0003327A /* LaunchScreen.xib */; };
 		1B41F9C119D5950C0003327A /* GrantedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9C019D5950C0003327A /* GrantedTests.m */; };
+		1B41F9D219D5A7070003327A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9D119D5A7070003327A /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		1B41F9BA19D5950C0003327A /* GrantedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrantedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B41F9BF19D5950C0003327A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B41F9C019D5950C0003327A /* GrantedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrantedTests.m; sourceTree = "<group>"; };
+		1B41F9CF19D59DFB0003327A /* NGTextPropertyHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTextPropertyHolder.h; sourceTree = "<group>"; };
+		1B41F9D119D5A7070003327A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +72,7 @@
 		1B41F99219D5950C0003327A = {
 			isa = PBXGroup;
 			children = (
+				1B41F9D119D5A7070003327A /* README.md */,
 				1B41F99D19D5950C0003327A /* Granted */,
 				1B41F9BD19D5950C0003327A /* GrantedTests */,
 				1B41F99C19D5950C0003327A /* Products */,
@@ -87,17 +91,11 @@
 		1B41F99D19D5950C0003327A /* Granted */ = {
 			isa = PBXGroup;
 			children = (
-				1B41F9A219D5950C0003327A /* AppDelegate.h */,
-				1B41F9A319D5950C0003327A /* AppDelegate.m */,
-				1B41F9A519D5950C0003327A /* RootViewController.h */,
-				1B41F9A619D5950C0003327A /* RootViewController.m */,
-				1B41F9A819D5950C0003327A /* DataViewController.h */,
-				1B41F9A919D5950C0003327A /* DataViewController.m */,
-				1B41F9AB19D5950C0003327A /* ModelController.h */,
-				1B41F9AC19D5950C0003327A /* ModelController.m */,
-				1B41F9AE19D5950C0003327A /* Main.storyboard */,
-				1B41F9B119D5950C0003327A /* Images.xcassets */,
-				1B41F9B319D5950C0003327A /* LaunchScreen.xib */,
+				1B41F9CE19D59DB20003327A /* ProxiesAndDelegates */,
+				1B41F9CB19D595730003327A /* AppDelegates */,
+				1B41F9CC19D595800003327A /* ViewControllers */,
+				1B41F9CD19D5958D0003327A /* ModelControllers */,
+				1B41F9CA19D5951B0003327A /* UI */,
 				1B41F99E19D5950C0003327A /* Supporting Files */,
 			);
 			path = Granted;
@@ -109,7 +107,7 @@
 				1B41F99F19D5950C0003327A /* Info.plist */,
 				1B41F9A019D5950C0003327A /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		1B41F9BD19D5950C0003327A /* GrantedTests */ = {
@@ -126,7 +124,54 @@
 			children = (
 				1B41F9BF19D5950C0003327A /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B41F9CA19D5951B0003327A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9AE19D5950C0003327A /* Main.storyboard */,
+				1B41F9B119D5950C0003327A /* Images.xcassets */,
+				1B41F9B319D5950C0003327A /* LaunchScreen.xib */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1B41F9CB19D595730003327A /* AppDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9A219D5950C0003327A /* AppDelegate.h */,
+				1B41F9A319D5950C0003327A /* AppDelegate.m */,
+			);
+			path = AppDelegates;
+			sourceTree = "<group>";
+		};
+		1B41F9CC19D595800003327A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9A519D5950C0003327A /* RootViewController.h */,
+				1B41F9A619D5950C0003327A /* RootViewController.m */,
+				1B41F9A819D5950C0003327A /* DataViewController.h */,
+				1B41F9A919D5950C0003327A /* DataViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1B41F9CD19D5958D0003327A /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9AB19D5950C0003327A /* ModelController.h */,
+				1B41F9AC19D5950C0003327A /* ModelController.m */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		1B41F9CE19D59DB20003327A /* ProxiesAndDelegates */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9CF19D59DFB0003327A /* NGTextPropertyHolder.h */,
+			);
+			path = ProxiesAndDelegates;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,6 +223,7 @@
 				TargetAttributes = {
 					1B41F99A19D5950C0003327A = {
 						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 5VF9S3SG45;
 					};
 					1B41F9B919D5950C0003327A = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -229,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B41F9D219D5A7070003327A /* README.md in Sources */,
 				1B41F9AA19D5950C0003327A /* DataViewController.m in Sources */,
 				1B41F9A419D5950C0003327A /* AppDelegate.m in Sources */,
 				1B41F9AD19D5950C0003327A /* ModelController.m in Sources */,
@@ -357,7 +404,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Granted/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Granted/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -367,7 +415,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Granted/Info.plist;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Granted/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -385,7 +434,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = GrantedTests/Info.plist;
+				INFOPLIST_FILE = "GrantedTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Granted.app/Granted";
@@ -400,7 +449,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = GrantedTests/Info.plist;
+				INFOPLIST_FILE = "GrantedTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Granted.app/Granted";
@@ -426,6 +475,7 @@
 				1B41F9C619D5950C0003327A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1B41F9C719D5950C0003327A /* Build configuration list for PBXNativeTarget "GrantedTests" */ = {
 			isa = XCConfigurationList;
@@ -434,6 +484,7 @@
 				1B41F9C919D5950C0003327A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

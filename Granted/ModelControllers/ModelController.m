@@ -20,20 +20,22 @@
 
 
 @interface ModelController ()
-
 @property (readonly, strong, nonatomic) NSArray *pageData;
 @end
 
 @implementation ModelController
 
 - (instancetype)init {
-    self = [super init];
-    if (self) {
-    // Create the data model.
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    _pageData = [[dateFormatter monthSymbols] copy];
-    }
-    return self;
+  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+  _pageData = [[dateFormatter monthSymbols] copy];
+  return [self initWithPageData:_pageData];
+}
+
+- (instancetype)initWithPageData:(NSArray *)pageData {
+  if (self = [super init]) {
+    _pageData = pageData;
+  }
+  return self;
 }
 
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard {

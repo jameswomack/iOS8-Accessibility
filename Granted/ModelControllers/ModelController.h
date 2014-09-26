@@ -12,6 +12,7 @@
 
 @interface ModelController : NSObject <UIPageViewControllerDataSource>
 
+- (instancetype)initWithPageData:(NSArray *)pageData NS_DESIGNATED_INITIALIZER;
 - (DataViewController *)viewControllerAtIndex:(NSUInteger)index storyboard:(UIStoryboard *)storyboard;
 - (NSUInteger)indexOfViewController:(DataViewController *)viewController;
 
