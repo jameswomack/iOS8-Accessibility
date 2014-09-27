@@ -62,7 +62,7 @@
   self.mp = moviePlayer;
   [self presentMoviePlayerViewControllerAnimated:self.mp];
   
-  [Sender sendToUrl:[NSURL URLWithString:@"http://localhost:8080/upload"] withFileUrl:movieUrl];
+  [Sender sendToUrl:[NSURL URLWithString:@"http://james.local:8080/upload"] withFileUrl:movieUrl];
 }
 
 - (void)didReceiveMemoryWarning {

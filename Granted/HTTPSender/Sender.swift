@@ -18,8 +18,10 @@ var boundary : String = "granted_boundary_for_post_data"
     let request : NSMutableURLRequest = URLRequest(toUrl: URL, withFileUrl: fileURL)
     
     let task : NSURLSessionDataTask = session.dataTaskWithRequest(request, completionHandler: { (data, response, error) -> Void in
-      println(response.MIMEType)
-      println(NSString(data: data, encoding: NSUTF8StringEncoding))
+      if let res = response {
+        println(response.MIMEType)
+        println(NSString(data: data, encoding: NSUTF8StringEncoding))
+      }
     })
     task.resume()
   }

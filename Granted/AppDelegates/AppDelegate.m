@@ -25,7 +25,6 @@
   [server start];
   
   NSURL *url = [NSURL URLWithString:@"http://localhost:3030/resources/test.json"];
-  //NSURL *movieUrl = [NSURL URLWithString:@"http://localhost:3030/resources/giphy.mp4"];
   
   NSURLSessionDataTask *downloadTask = [[NSURLSession sharedSession]
     dataTaskWithURL:url
