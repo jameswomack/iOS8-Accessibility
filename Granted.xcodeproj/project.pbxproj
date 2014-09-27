@@ -16,7 +16,15 @@
 		1B41F9B219D5950C0003327A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9B119D5950C0003327A /* Images.xcassets */; };
 		1B41F9B519D5950C0003327A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9B319D5950C0003327A /* LaunchScreen.xib */; };
 		1B41F9C119D5950C0003327A /* GrantedTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9C019D5950C0003327A /* GrantedTests.m */; };
-		1B41F9D219D5A7070003327A /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9D119D5A7070003327A /* README.md */; };
+		1B41F9D619D5F9EB0003327A /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9D519D5F9EB0003327A /* Server.swift */; };
+		1B41F9DE19D5FB4A0003327A /* HttpParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9D919D5FB4A0003327A /* HttpParser.swift */; };
+		1B41F9DF19D5FB4A0003327A /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9DA19D5FB4A0003327A /* HttpRequest.swift */; };
+		1B41F9E019D5FB4A0003327A /* HttpResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9DB19D5FB4A0003327A /* HttpResponse.swift */; };
+		1B41F9E119D5FB4A0003327A /* HttpServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9DC19D5FB4A0003327A /* HttpServer.swift */; };
+		1B41F9E219D5FB4A0003327A /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9DD19D5FB4A0003327A /* Socket.swift */; };
+		1B41F9E819D5FE8D0003327A /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9E719D5FE8D0003327A /* test.json */; };
+		1B41F9ED19D6086F0003327A /* giphy.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1B41F9EC19D6067D0003327A /* giphy.mp4 */; };
+		1BD0504619D64A2F003E56DC /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BD0504519D64A2F003E56DC /* Sender.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +57,16 @@
 		1B41F9C019D5950C0003327A /* GrantedTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrantedTests.m; sourceTree = "<group>"; };
 		1B41F9CF19D59DFB0003327A /* NGTextPropertyHolder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGTextPropertyHolder.h; sourceTree = "<group>"; };
 		1B41F9D119D5A7070003327A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1B41F9D519D5F9EB0003327A /* Server.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Server.swift; path = HTTPServer/Server.swift; sourceTree = "<group>"; };
+		1B41F9D919D5FB4A0003327A /* HttpParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpParser.swift; path = HTTPServer/HttpParser.swift; sourceTree = "<group>"; };
+		1B41F9DA19D5FB4A0003327A /* HttpRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpRequest.swift; path = HTTPServer/HttpRequest.swift; sourceTree = "<group>"; };
+		1B41F9DB19D5FB4A0003327A /* HttpResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpResponse.swift; path = HTTPServer/HttpResponse.swift; sourceTree = "<group>"; };
+		1B41F9DC19D5FB4A0003327A /* HttpServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HttpServer.swift; path = HTTPServer/HttpServer.swift; sourceTree = "<group>"; };
+		1B41F9DD19D5FB4A0003327A /* Socket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = HTTPServer/Socket.swift; sourceTree = "<group>"; };
+		1B41F9E719D5FE8D0003327A /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		1B41F9E919D6005F0003327A /* Granted-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Granted-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B41F9EC19D6067D0003327A /* giphy.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = giphy.mp4; sourceTree = "<group>"; };
+		1BD0504519D64A2F003E56DC /* Sender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sender.swift; path = HTTPSender/Sender.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1B41F9D119D5A7070003327A /* README.md */,
+				1B41F9E619D5FE8D0003327A /* Resources */,
 				1B41F99D19D5950C0003327A /* Granted */,
 				1B41F9BD19D5950C0003327A /* GrantedTests */,
 				1B41F99C19D5950C0003327A /* Products */,
@@ -91,6 +110,8 @@
 		1B41F99D19D5950C0003327A /* Granted */ = {
 			isa = PBXGroup;
 			children = (
+				1BD0504419D64A16003E56DC /* HTTPSender */,
+				1B41F9D319D5F9BC0003327A /* HTTPServer */,
 				1B41F9CE19D59DB20003327A /* ProxiesAndDelegates */,
 				1B41F9CB19D595730003327A /* AppDelegates */,
 				1B41F9CC19D595800003327A /* ViewControllers */,
@@ -172,6 +193,37 @@
 				1B41F9CF19D59DFB0003327A /* NGTextPropertyHolder.h */,
 			);
 			path = ProxiesAndDelegates;
+			sourceTree = "<group>";
+		};
+		1B41F9D319D5F9BC0003327A /* HTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9D919D5FB4A0003327A /* HttpParser.swift */,
+				1B41F9DA19D5FB4A0003327A /* HttpRequest.swift */,
+				1B41F9DB19D5FB4A0003327A /* HttpResponse.swift */,
+				1B41F9DC19D5FB4A0003327A /* HttpServer.swift */,
+				1B41F9DD19D5FB4A0003327A /* Socket.swift */,
+				1B41F9D519D5F9EB0003327A /* Server.swift */,
+				1B41F9E919D6005F0003327A /* Granted-Bridging-Header.h */,
+			);
+			name = HTTPServer;
+			sourceTree = "<group>";
+		};
+		1B41F9E619D5FE8D0003327A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1B41F9EC19D6067D0003327A /* giphy.mp4 */,
+				1B41F9E719D5FE8D0003327A /* test.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1BD0504419D64A16003E56DC /* HTTPSender */ = {
+			isa = PBXGroup;
+			children = (
+				1BD0504519D64A2F003E56DC /* Sender.swift */,
+			);
+			name = HTTPSender;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B41F9B019D5950C0003327A /* Main.storyboard in Resources */,
+				1B41F9ED19D6086F0003327A /* giphy.mp4 in Resources */,
+				1B41F9E819D5FE8D0003327A /* test.json in Resources */,
 				1B41F9B519D5950C0003327A /* LaunchScreen.xib in Resources */,
 				1B41F9B219D5950C0003327A /* Images.xcassets in Resources */,
 			);
@@ -275,9 +329,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B41F9D219D5A7070003327A /* README.md in Sources */,
+				1B41F9E019D5FB4A0003327A /* HttpResponse.swift in Sources */,
+				1B41F9DE19D5FB4A0003327A /* HttpParser.swift in Sources */,
+				1B41F9D619D5F9EB0003327A /* Server.swift in Sources */,
 				1B41F9AA19D5950C0003327A /* DataViewController.m in Sources */,
+				1BD0504619D64A2F003E56DC /* Sender.swift in Sources */,
 				1B41F9A419D5950C0003327A /* AppDelegate.m in Sources */,
+				1B41F9E119D5FB4A0003327A /* HttpServer.swift in Sources */,
+				1B41F9DF19D5FB4A0003327A /* HttpRequest.swift in Sources */,
+				1B41F9E219D5FB4A0003327A /* Socket.swift in Sources */,
 				1B41F9AD19D5950C0003327A /* ModelController.m in Sources */,
 				1B41F9A119D5950C0003327A /* main.m in Sources */,
 				1B41F9A719D5950C0003327A /* RootViewController.m in Sources */,
@@ -404,10 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Granted/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Granted/Granted-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -415,10 +478,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Granted/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Granted/Granted-Bridging-Header.h";
 			};
 			name = Release;
 		};

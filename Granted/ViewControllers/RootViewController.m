@@ -9,10 +9,14 @@
 #import "RootViewController.h"
 #import "ModelController.h"
 #import "DataViewController.h"
+#import "Granted-Swift.h"
+@import MediaPlayer;
 
 @interface RootViewController ()
 
 @property (readonly, strong, nonatomic) ModelController *modelController;
+@property (strong, nonatomic) MPMoviePlayerViewController *mp;
+
 @end
 
 @implementation RootViewController
@@ -46,6 +50,19 @@
 
   // Add the page view controller's gesture recognizers to the book view controller's view so that the gestures are started more easily.
   self.view.gestureRecognizers = self.pageViewController.gestureRecognizers;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+  [super viewDidAppear:animated];
+  
+  //NSURL *movieUrl = [NSURL URLWithString:@"http://localhost:3030/resources/giphy.mp4"];
+  NSURL *movieUrl = [NSBundle.mainBundle URLForResource:@"giphy" withExtension:@"mp4"];
+  MPMoviePlayerViewController *moviePlayer = [[MPMoviePlayerViewController alloc] initWithContentURL:movieUrl];
+  moviePlayer.moviePlayer.shouldAutoplay = NO;
+  self.mp = moviePlayer;
+  [self presentMoviePlayerViewControllerAnimated:self.mp];
+  
+  [Sender sendToUrl:[NSURL URLWithString:@"http://localhost:8080/upload"] withFileUrl:movieUrl];
 }
 
 - (void)didReceiveMemoryWarning {
