@@ -63,6 +63,10 @@
   [self presentMoviePlayerViewControllerAnimated:self.mp];
   
   [Sender sendToUrl:[NSURL URLWithString:@"http://james.local:8080/upload"] withFileUrl:movieUrl];
+  
+  (void)[[Proximity alloc] initWithProximityChangeHandler:^(BOOL isClose) {
+    [[[UIAlertView alloc] initWithTitle:@"Proximity" message:isClose ? @"YES" : @"NO" delegate:nil cancelButtonTitle:@"Thanks" otherButtonTitles:nil] show];
+  }];
 }
 
 - (void)didReceiveMemoryWarning {

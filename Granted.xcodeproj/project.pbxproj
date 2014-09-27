@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B307CBA19D74CA00010FF16 /* Proximity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B307CB919D74CA00010FF16 /* Proximity.swift */; };
 		1B41F9A119D5950C0003327A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9A019D5950C0003327A /* main.m */; };
 		1B41F9A419D5950C0003327A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9A319D5950C0003327A /* AppDelegate.m */; };
 		1B41F9A719D5950C0003327A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B41F9A619D5950C0003327A /* RootViewController.m */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1B307CB919D74CA00010FF16 /* Proximity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Proximity.swift; path = DeviceContext/Proximity.swift; sourceTree = "<group>"; };
 		1B41F99B19D5950C0003327A /* Granted.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Granted.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B41F99F19D5950C0003327A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B41F9A019D5950C0003327A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B307CB819D74C800010FF16 /* DeviceContext */ = {
+			isa = PBXGroup;
+			children = (
+				1B307CB919D74CA00010FF16 /* Proximity.swift */,
+			);
+			name = DeviceContext;
+			sourceTree = "<group>";
+		};
 		1B41F99219D5950C0003327A = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +120,7 @@
 		1B41F99D19D5950C0003327A /* Granted */ = {
 			isa = PBXGroup;
 			children = (
+				1B307CB819D74C800010FF16 /* DeviceContext */,
 				1BD0504419D64A16003E56DC /* HTTPSender */,
 				1B41F9D319D5F9BC0003327A /* HTTPServer */,
 				1B41F9CE19D59DB20003327A /* ProxiesAndDelegates */,
@@ -338,6 +349,7 @@
 				1B41F9E119D5FB4A0003327A /* HttpServer.swift in Sources */,
 				1B41F9DF19D5FB4A0003327A /* HttpRequest.swift in Sources */,
 				1B41F9E219D5FB4A0003327A /* Socket.swift in Sources */,
+				1B307CBA19D74CA00010FF16 /* Proximity.swift in Sources */,
 				1B41F9AD19D5950C0003327A /* ModelController.m in Sources */,
 				1B41F9A119D5950C0003327A /* main.m in Sources */,
 				1B41F9A719D5950C0003327A /* RootViewController.m in Sources */,
